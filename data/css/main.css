@@ -5,6 +5,14 @@
           box-sizing: border-box;
 }
 
+h1 {
+  text-align: center;
+  font-family: Segoe UI;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  font-size: 2.6em;
+}
+
 .menu {
   text-align: center;
   margin: auto;
