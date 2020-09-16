@@ -3,19 +3,47 @@
 *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #f3f3f3;
 }
 
 h1 {
+  margin-top: 28px;
   text-align: center;
   font-family: Segoe UI;
   text-transform: uppercase;
   word-spacing: 5px;
-  font-size: 2.6em;
+  font-size: 2.8em;
+  color: #707070;
 }
 
 .menu {
   text-align: center;
   margin: auto;
-  width: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.menu svg {
+  width: 800px;
+  height: 650px;
+  margin-top: 40px;
+}
+
+#Polygone_2, #Polygone_3, #Polygone_4, #Polygone_5, #Polygone_6, #Polygone_7 {
+  color: rgba(0, 0, 0, 0);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#Polygone_2:hover, #Polygone_3:hover, #Polygone_4:hover, #Polygone_5:hover, #Polygone_6:hover, #Polygone_7:hover {
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  color: rgba(194, 194, 194, 0.5);
+}
+
+#Polygone_1 {
+  color: #f3f3f3;
 }
 /*# sourceMappingURL=main.css.map */
