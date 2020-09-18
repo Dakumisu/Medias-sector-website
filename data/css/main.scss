@@ -9,6 +9,7 @@ $bg : #f3f3f3;
 body {
     background-color: $bg;
     margin: 0;
+    font-family: Segoe UI;
 }
 
 h1 {
@@ -24,14 +25,16 @@ h1 {
 .menu {
     text-align: center;
     margin: auto;
+    margin-top: 50px;
+    transform: translate(-190px);
     width: fit-content;
     svg {
-        width: 750px;
-        height: 650px;
-        margin-top: 40px;
+        width: 220%;
+        height: 65vh;
+        margin: auto;
         transition: all 1s ease;
-        
-        background-color: red;
+        transform-box: fill-box;
+        transform-origin: center;
     }
 }
 
@@ -49,6 +52,29 @@ h1 {
     color: $bg;
 }
 
-#turn {
-    cursor: pointer;
+.button-container {
+    width: 100%;
+    margin: auto;
+    bottom: 5vh;
+    position: absolute;
+    text-align: center;
+    #turn {
+        justify-content: center;
+        cursor: pointer;
+        z-index: 10;
+        width: 20%;
+        height: 5vh;
+        font-family: Segoe UI;
+        font-weight: bold;
+        color: rgb(112, 112, 112);
+        border: 1px dotted rgba(194, 194, 194, 0.5);;
+        background-color: rgba(255, 255, 255, 0);
+        transition: all 1s ease;
+        &:hover {
+            letter-spacing: 1px;
+            color: rgb(32, 32, 32);
+            transition: all 1s ease;
+            background-color: rgba(194, 194, 194, 0.5);
+        }
+    }
 }
