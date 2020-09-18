@@ -5,13 +5,23 @@ $p4 = document.getElementById("#Polygone_5");
 $p5 = document.getElementById("#Polygone_6");
 $p6 = document.getElementById("#Polygone_7");
 
-$p1 = document.getElementById('#Polygone_2').onclick; 
 
-$p1.addEventListener('click', event => {
-    alert(`Nombre de clics : ${event.detail}`);
-    alert('ueue');
+$turn = 0;
+
+$(document).ready(function () {
+  $("#turn").click(function () {
+    $turn = $turn + 60;
+    console.log($turn);
+    $("svg").css({"transform" : "rotateZ("+$turn+"deg)"});
   });
 
-function test(clicked) {
+  // $(document).scroll(function () {
+  //     $('body').css('background-color','red');
+  // });
+      
+});
 
+
+test = function maFonction() {
+  $('body').css('background-color','green');
 }

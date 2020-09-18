@@ -4,7 +4,11 @@ $bg : #f3f3f3;
 *:before,
 *:after {
     box-sizing: border-box;
+}
+
+body {
     background-color: $bg;
+    margin: 0;
 }
 
 h1 {
@@ -22,9 +26,12 @@ h1 {
     margin: auto;
     width: fit-content;
     svg {
-        width: 800px;
+        width: 750px;
         height: 650px;
         margin-top: 40px;
+        transition: all 1s ease;
+        
+        background-color: red;
     }
 }
 
@@ -40,4 +47,8 @@ h1 {
 
 #Polygone_1 {
     color: $bg;
+}
+
+#turn {
+    cursor: pointer;
 }
