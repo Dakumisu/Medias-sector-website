@@ -1,11 +1,3 @@
-// $p1 = document.getElementById("#Poly_2");
-// $p2 = document.getElementById("#Poly_3");
-// $p3 = document.getElementById("#Poly_4");
-// $p4 = document.getElementById("#Poly_5");
-// $p5 = document.getElementById("#Poly_6");
-// $p6 = document.getElementById("#Poly_7");
-
-
 $turn = 0;
 
 $(document).ready(function () {
@@ -17,6 +9,7 @@ $(document).ready(function () {
 
   $("#Poly_2").click(function () {
     console.log("MÉDIAS CLASSIQUES");
+    $("#Polygone_2").css({"transform" : "scale(22.5)"});
   });
 
   $("#Poly_3").click(function () {
@@ -38,10 +31,6 @@ $(document).ready(function () {
   $("#Poly_7").click(function () {
     console.log("RÉGULATION DES MÉDIAS");
   });
-
-  // $(document).scroll(function () {
-  //     $('body').css('background-color','red');
-  // });
       
 });
 

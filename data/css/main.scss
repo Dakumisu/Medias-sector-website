@@ -40,7 +40,8 @@ h1 {
 
 #Polygone_2, #Polygone_3, #Polygone_4, #Polygone_5, #Polygone_6, #Polygone_7 {
     color: rgba(0, 0, 0, 0);
-    transition: all .5s ease;
+    //transition: color .5s ease;
+    transition: transform 5s ease;
     &:hover {
         cursor: pointer;
         transition: all .5s ease;
