@@ -9,7 +9,7 @@ $(document).ready(function () {
 
   $("#Poly_2").click(function () {
     console.log("MÉDIAS CLASSIQUES");
-    $("#Polygone_2").css({"transform" : "scale(22.5)"});
+    $("svg").css({"opacity" : "0"});
   });
 
   $("#Poly_3").click(function () {
