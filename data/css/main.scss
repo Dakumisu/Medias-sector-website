@@ -1,7 +1,5 @@
 $bg : #f3f3f3;
 
-@charset "utf-8";
-
 *,
 *:before,
 *:after {
@@ -13,6 +11,7 @@ html{
 }
 
 body {
+    overflow: hidden;
     padding: 0;
     font-size: 16px;
     // background-color: $bg;
@@ -29,7 +28,7 @@ h1 {
     text-transform: uppercase;
     word-spacing: 5px;
     font-size: 2.8em;
-    color: rgb(112, 112, 112);
+    color: #000;
 }
 
 h2 {
@@ -39,12 +38,13 @@ h2 {
 
 .menu {
     text-align: center;
+    display: flex;
+    justify-content: center;
     margin: auto;
     margin-top: 50px;
-    transform: translate(-190px);
-    width: fit-content;
     svg {
-        width: 220%;
+        position: absolute;
+        width: 700px;
         height: 65vh;
         margin: auto;
         transition: all 1s ease;
@@ -56,7 +56,7 @@ h2 {
 #Polygone_2, #Polygone_3, #Polygone_4, #Polygone_5, #Polygone_6, #Polygone_7 {
     color: rgba(0, 0, 0, 0);
     //transition: color .5s ease;
-    transition: transform 5s ease;
+    transition: transform 1s ease;
     &:hover {
         cursor: pointer;
         transition: all .5s ease;

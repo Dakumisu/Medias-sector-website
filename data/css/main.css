@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  overflow: hidden;
   padding: 0;
   font-size: 16px;
   background-color: #fff;
@@ -25,7 +26,7 @@ h1 {
   text-transform: uppercase;
   word-spacing: 5px;
   font-size: 2.8em;
-  color: #707070;
+  color: #000;
 }
 
 h2 {
@@ -35,17 +36,19 @@ h2 {
 
 .menu {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: auto;
   margin-top: 50px;
-  -webkit-transform: translate(-190px);
-          transform: translate(-190px);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .menu svg {
-  width: 220%;
+  position: absolute;
+  width: 700px;
   height: 65vh;
   margin: auto;
   -webkit-transition: all 1s ease;
@@ -57,10 +60,10 @@ h2 {
 
 #Polygone_2, #Polygone_3, #Polygone_4, #Polygone_5, #Polygone_6, #Polygone_7 {
   color: rgba(0, 0, 0, 0);
-  -webkit-transition: -webkit-transform 5s ease;
-  transition: -webkit-transform 5s ease;
-  transition: transform 5s ease;
-  transition: transform 5s ease, -webkit-transform 5s ease;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
 #Polygone_2:hover, #Polygone_3:hover, #Polygone_4:hover, #Polygone_5:hover, #Polygone_6:hover, #Polygone_7:hover {
