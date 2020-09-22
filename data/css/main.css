@@ -60,10 +60,8 @@ h2 {
 
 #Polygone_2, #Polygone_3, #Polygone_4, #Polygone_5, #Polygone_6, #Polygone_7 {
   color: rgba(0, 0, 0, 0);
-  -webkit-transition: -webkit-transform 1s ease;
-  transition: -webkit-transform 1s ease;
-  transition: transform 1s ease;
-  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 #Polygone_2:hover, #Polygone_3:hover, #Polygone_4:hover, #Polygone_5:hover, #Polygone_6:hover, #Polygone_7:hover {
