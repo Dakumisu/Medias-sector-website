@@ -10,17 +10,13 @@ html {
 }
 
 ::-moz-selection {
-  background-color: none;
+  background-color: rgba(0, 0, 0, 0);
   color: #6e31fb;
-  -webkit-transition: 300ms ease;
-  transition: 300ms ease;
 }
 
 ::selection {
-  background-color: none;
+  background-color: rgba(0, 0, 0, 0);
   color: #6e31fb;
-  -webkit-transition: 300ms ease;
-  transition: 300ms ease;
 }
 
 body {
@@ -46,6 +42,7 @@ body {
   text-align: center;
   padding: 5px;
   z-index: 100;
+  margin: 0;
   -webkit-filter: drop-shadow(0 3mm 5mm rgba(41, 41, 41, 0.7));
           filter: drop-shadow(0 3mm 5mm rgba(41, 41, 41, 0.7));
   background-color: #363636;

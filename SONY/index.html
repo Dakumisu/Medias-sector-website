@@ -18,38 +18,51 @@
     <link rel="icon" href="favicon.png" />
 </head>
 
-<body>
+<body id="my-scrollbar">
 
     <div class="bar-up hide">
         <img src="./data/img/sony-logo.png" alt="logo de SONY">
         <div id="progress-bar"></div>
     </div>
+    <scrollbar>
+        <nav>
+            <ul>
+                <li><a href="./data/Pages/Page1.html">PAGE 1</a></li>
+            </ul>
+        </nav>
+        <main id="swup" class="transition-fade">
+            <div id="fullpage">
+                <div class="section section-0 active" data-anchor="progress0">
+                    <h1>Le secteur des médias</h1>
+                    <h2>SONY</h2>
+                </div>
+                <div class="section section-1" data-anchor="progress1">
+                    <div class="slide">
+                        <img src="./data/img/sony-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="section section-2" data-anchor="progress2">
+                    <div class="slide">
+                        <img src="./data/img/sony-logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </main>
 
-    <nav>
-        <ul>
-            <li><a href="./data/Pages/Page1.html">PAGE 1</a></li>
-        </ul>
-    </nav>
-    <main id="swup" class="transition-fade">
-        <div id="fullpage">
-            <div class="section active">
-                <h1>Le secteur des médias</h1>
-                <h2>SONY</h2>
-            </div>
-            <div class="section" data-anchor="progress1">
-                <div class="slide">
-                    <img src="./data/img/sony-logo.png" alt="">
-                </div>
-            </div>
-            <div class="section" data-anchor="progress2">
-                <div class="slide">
-                    <img src="./data/img/sony-logo.png" alt="">
-                </div>
-            </div>
+        <div class="scrollbar-track scrollbar-track-x">
+            <div class="scrollbar-thumb scrollbar-thumb-x"></div>
         </div>
-    </main>
+        <div class="scrollbar-track scrollbar-track-y">
+            <div class="scrollbar-thumb scrollbar-thumb-y"></div>
+        </div>
+    </scrollbar>
 
     <script src="./data/js/swup.js"></script>
+    <!-- <script>
+        import Scrollbar from 'smooth-scrollbar';
+        Scrollbar.initAll(); 
+    </script> -->
+
 
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
